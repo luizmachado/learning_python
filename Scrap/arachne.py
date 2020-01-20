@@ -29,7 +29,6 @@ def cadastra():
 ### Função minera
 def minera(ativos_lista = ["XPML11", "XPIN11", "IRDM11"]):
     driver = webdriver.Firefox()
-    cotacao = []
     for i in ativos_lista:
         #Site 1
         urlpage1 = "https://www.clubefii.com.br/fiis/" + i
