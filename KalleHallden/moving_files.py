@@ -1,8 +1,8 @@
-from watchdog.observer import Observer
+from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 import time
 import os
-import json
+#import json
 
 class MyHandler(FileSystemEventHandler):
     i = 1
