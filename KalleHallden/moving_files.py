@@ -9,8 +9,7 @@ class MyHandler(FileSystemEventHandler):
     def on_modified(self, event):
         for filename in os.listdir(folder_to_track):
             src = folder_to_track + "/" + filename
-            #if src != folder_destination and re.search('^.*\.(avi|webm)$', filename) is not None:
-            if re.search('^.*\.(avi|webm)$', filename) is not None:
+            if src != folder_destination and re.search('^.*\.(avi|webm|mp4)$', filename) is not None:
                 new_destination = filme_destination + "/" + filename
                 os.rename(src, new_destination)
 
